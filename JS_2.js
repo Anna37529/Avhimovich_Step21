@@ -90,11 +90,27 @@ let month = +prompt(`Введите месяц`);
 let years = +prompt(`Введите год`);   
     if (day === 31 && month === 12){
         alert (`01.01. ${years + 1}`);    
-    } else if (day === 31 && (month === 01 || 03 || 05 || 07 || 08 || 10)){
+    } else if (day === 31 && (month === 01)){
         alert ( `01. 0${month + 1} . ${years}`)
-    } else if (day === 30 && (month === 04 || 06 || 09 || 11)){
+    } else if (day === 31 && (month === 03)){
+        alert ( `01. 0${month + 1} . ${years}`)
+    } else if (day === 31 && (month === 05)){
+        alert ( `01. 0${month + 1} . ${years}`)
+    } else if (day === 31 && (month === 07)){
+        alert ( `01. 0${month + 1} . ${years}`)
+    } else if (day === 31 && (month === 08)){
+        alert ( `01. 0${month + 1} . ${years}`)
+    } else if (day === 31 && (month === 10)){
+        alert ( `01. 0${month + 1} . ${years}`)
+    } else if (day === 30 && (month === 04)){
         alert ( `01. 0${month + 1} . ${years}`);
-    }  else if (day === 29 && month === 02){
+    } else if (day === 30 && (month === 06)){
+        alert ( `01. 0${month + 1} . ${years}`);
+    } else if (day === 30 && (month === 09)){
+        alert ( `01. 0${month + 1} . ${years}`);
+    } else if (day === 30 && (month === 11)){
+        alert ( `01. 0${month + 1} . ${years}`);
+    } else if (day === 29 && month === 02){
        alert (`01. 0${month + 1} . ${years}`); 
     } else if (day === 28 && month === 02 && (years % 4 || (!(years % 100) && years % 400))){
         alert ( `01. 0${month + 1} . ${years}`);
