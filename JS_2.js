@@ -38,6 +38,7 @@ switch (a){
     case 9: 
         alert(`(`);
         break;
+    default: alert(`условие не выполнено`);
 }
 
 let number = +prompt('Введите трехзначное число');
