@@ -115,6 +115,8 @@ let years = +prompt(`Введите год`);
        alert (`01. 0${month + 1} . ${years}`); 
     } else if (day === 28 && month === 02 && (years % 4 || (!(years % 100) && years % 400))){
         alert ( `01. 0${month + 1} . ${years}`);
+    } else if (day > 31 || month > 12){
+        alert (`Вы ввели неправильную дату`);
     } else{
         alert (`${day + 1}. ${month} . ${years}`);
     }
